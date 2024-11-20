@@ -25,4 +25,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware('auth')->prefix('/admin')->name('admin.')->group(function () {
     Route::get('/posts/index', [AdminPostController::class, 'index'])->name('posts.index');
+    Route::get('/show/{post}', [AdminPostController::class, 'show'] )->name('posts.show');
 });

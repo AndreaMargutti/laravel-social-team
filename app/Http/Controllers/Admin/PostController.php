@@ -11,12 +11,12 @@ class PostController extends Controller
     //
     public function index () {
         $posts = Post::all();
-
         return view ('admin.posts.index', compact('posts'));
     }
 
-    public function show () {
+    public function show (Post $post) {
 
+        return view ('admin.posts.show', compact('post'));
     }
 
     public function create () {

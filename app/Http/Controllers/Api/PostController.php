@@ -17,4 +17,11 @@ class PostController extends Controller
             "results" => $posts,
         ]);
     }
+
+    public function show(Post $post) {
+        return response()->json([
+            "success" => true,
+            "results" => $post,
+        ]);
+    }
 }

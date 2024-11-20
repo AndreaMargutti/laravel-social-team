@@ -14,7 +14,7 @@ class PostController extends Controller
         return view ('admin.posts.index', compact('posts'));
     }
 
-    public function show (Post $post) {
+    public function show (Post $post) { //? dependency injection works like a findOrFail($id);
         return view ('admin.posts.show', compact('post'));
     }
 

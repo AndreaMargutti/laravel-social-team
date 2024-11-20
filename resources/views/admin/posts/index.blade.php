@@ -15,7 +15,7 @@
             <th>{{$post->title}}</th>
             <td>{{$post->author}}</td>
             <td>
-                <button class="btn btn-lg btn-primary">
+                <button class="btn btn-primary">
                     <a href="{{route('admin.posts.show', $post)}}">Show</a>
                 </button>
             </td>
